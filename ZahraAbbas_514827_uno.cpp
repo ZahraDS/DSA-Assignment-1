@@ -1,6 +1,6 @@
-// uno.cpp
 // Implementation for UNOGame using external state mapping (no private members added).
-// Header: "uno.h"
+
+// updated version for final submission, the initial one that i first had gave many errors since the uno.h header file wasnt in the same position as mine in the vs code and initially i was unable to figure out the issue
 
 #include "uno.h"
 #include <vector>
@@ -12,7 +12,7 @@
 
 namespace {
 	// Colors and internal card representation (hidden)
-	enum class Color { Red, Green, Blue, Yellow };
+	enum class Color  { Red, Green, Blue, Yellow };
 
 	struct InternalCard {
 		Color color;
@@ -259,3 +259,4 @@ std::string UNOGame::getState() const {
 	}
 	return out.str();
 }
+

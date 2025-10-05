@@ -1,3 +1,4 @@
+//(i made it just to make my polynomial.cpp file  get working, without it my compiler was giving errors)
 #include <iostream>
 #include "Polynomial.h"
 using namespace std;
@@ -44,3 +45,4 @@ int main() {
 
 	return 0;
 }
+

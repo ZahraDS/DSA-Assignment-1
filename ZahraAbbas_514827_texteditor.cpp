@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 
-// We store each TextEditor object's state externally (can't add members to header)
+// i stored each TextEditor object's state externally (can't add members to header)
 static std::map<const TextEditor*, std::pair<std::deque<char>, std::deque<char>>> editorStorage;
 
 // Helper to get references to left/right deques for this object
@@ -67,3 +67,4 @@ std::string TextEditor::getTextWithCursor() const {
     for (char c : right) out << c;
     return out.str();
 }
+

@@ -1,3 +1,4 @@
+// updated version for final submission
 #include "polynomial.h"
 #include <iostream>
 #include <map>
@@ -12,7 +13,7 @@ struct Term {
 	Term(int c, int e) : coeff(c), exp(e), next(nullptr) {}
 };
 
-// Global map to store each Polynomial’s linked list head
+// Global map to store each Polynomialâ€™s linked list head
 static std::map<const Polynomial*, Term*> polyData;
 
 // Helper function to insert a term in ascending exponent order
@@ -190,3 +191,4 @@ Polynomial Polynomial::derivative() const {
 	}
 	return result;
 }
+

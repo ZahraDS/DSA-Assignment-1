@@ -34,7 +34,7 @@ namespace {
     // Build full deck according to the assignment:
     // Values 0-9: two copies of 1-9, single 0 per color
     // Action cards per color: 2 x Skip, 2 x Reverse, 2 x Draw Two
-    // NOTE: This produces 100 cards total (25 per color).
+    //this produces 100 cards total (25 per color).
     static std::vector<InternalCard> buildDeck() {
         std::vector<InternalCard> deck;
         std::vector<Color> colors = {Color::Red, Color::Green, Color::Blue, Color::Yellow};
@@ -47,12 +47,12 @@ namespace {
                 deck.emplace_back(c, std::to_string(v));
             }
             // action cards: 2 each
-            deck.emplace_back(c, "Skip");
-            deck.emplace_back(c, "Skip");
-            deck.emplace_back(c, "Reverse");
-            deck.emplace_back(c, "Reverse");
-            deck.emplace_back(c, "Draw Two");
-            deck.emplace_back(c, "Draw Two");
+            deck.emplace_back(c, "Skip.");
+            deck.emplace_back(c, "Skip.");
+            deck.emplace_back(c, "Reverse.");
+            deck.emplace_back(c, "Reverse.");
+            deck.emplace_back(c, "Draw Two.");
+            deck.emplace_back(c, "Draw Two.");
         }
         return deck;
     }
@@ -317,3 +317,4 @@ static void cleanupUNO(const UNOGame* key) {
 // NOTE: We cannot rely on destructor being called here because header doesn't declare one.
 // If you want safe cleanup, call delete on UNOGame object from the caller side and add a destructor in header.
 // For assignment's auto test runs it's usually not necessary.
+

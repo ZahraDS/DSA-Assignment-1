@@ -1,3 +1,4 @@
+//main for text editor (without having it my cpp file wasnt working)
 #include <iostream>
 #include "texteditor.h"
 using namespace std;
@@ -14,3 +15,4 @@ int main() {
 
 	return 0;
 }
+
